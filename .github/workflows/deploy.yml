@@ -13,6 +13,7 @@ jobs:
         
       - name: NPM install and build
         run: |
+          npm install -g hexo-cli
           npm install
           hexo generate
       
