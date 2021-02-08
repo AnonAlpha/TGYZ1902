@@ -336,9 +336,16 @@ scroll_down_arrow:
 scroll_top_arrow:
   enable: true
 
-# 头图滚动视差
-# Banner image scrolling parallax
-banner_parallax: true
+# 首屏图片的相关配置
+# Config of the big image on the first screen
+banner:
+  # 视差滚动，图片与板块会随着屏幕滚动产生视差效果
+  # Scrolling parallax
+  parallax: true
+
+  # 图片最小的宽高比，以免图片两边被过度裁剪，适用于移动端竖屏时，如需关闭设为 0
+  # Minimum ratio of width to height, applicable to the vertical screen of mobile device, if you need to close it, set it to 0
+  width_height_ratio: 1.0
 
 
 #---------------------------
@@ -390,7 +397,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: https://source.unsplash.com/random/?c=high&q=20
+  banner_img:
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -466,7 +473,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: https://source.unsplash.com/random/?c=high&q=20
+  banner_img: https://api.ixiaowai.cn/gqapi/gqapi.php
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -724,7 +731,7 @@ twikoo:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: https://source.unsplash.com/random/?c=high&q=20
+  banner_img: https://api.ixiaowai.cn/gqapi/gqapi.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
@@ -736,7 +743,7 @@ archive:
 #---------------------------
 category:
   enable: false
-  banner_img: https://source.unsplash.com/random/?c=high&q=20
+  banner_img: https://api.ixiaowai.cn/gqapi/gqapi.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
@@ -761,7 +768,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: https://source.unsplash.com/random/?c=high&q=20
+  banner_img: https://api.ixiaowai.cn/gqapi/gqapi.php
   banner_img_height: 80
   banner_mask_alpha: 0.3
   subtitle:
@@ -779,7 +786,7 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: https://source.unsplash.com/random/?c=high&q=20
+  banner_img: https://api.ixiaowai.cn/gqapi/gqapi.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:  # 打字机内容
@@ -801,7 +808,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: https://source.unsplash.com/random/?c=high&q=20
+  banner_img: https://api.ixiaowai.cn/gqapi/gqapi.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -812,7 +819,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: https://source.unsplash.com/random/?c=high&q=20
+  banner_img: https://api.ixiaowai.cn/gqapi/gqapi.php
   banner_img_height: 85
   banner_mask_alpha: 0.3
   subtitle: "Page not found"
@@ -824,7 +831,7 @@ page404:
 #---------------------------
 links:
   enable: false
-  banner_img: https://source.unsplash.com/random/?c=high&q=20
+  banner_img: https://api.ixiaowai.cn/gqapi/gqapi.php
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
