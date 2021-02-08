@@ -397,7 +397,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img:
+  banner_img: https://api.ixiaowai.cn/gqapi/gqapi.php
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -819,7 +819,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: https://api.ixiaowai.cn/gqapi/gqapi.php
+  banner_img: https://api.ixiaowai.cn/gqapi/gqapi.php/
   banner_img_height: 85
   banner_mask_alpha: 0.3
   subtitle: "Page not found"
